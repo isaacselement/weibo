@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+
+	<!-- 国际化资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources"></constant>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.multipart.maxSize" value="4194304" />
+	
+	<package name="main" extends="struts-default">
+	<!--	 
+	 登录操作 
+		-->
+		<action name="login" class="loginAction">
+			<result name="input">/Qlogin.html</result>
+			<result name="success">/user/Qhome.jsp</result>
+			<result name="register" type="redirect">/user/member_register.jsp</result>
+			<result name="update" type="redirect">/user/member_update.jsp</result>
+			<result name="admin" type="redirect">/admin/index.jsp</result>
+		</action>
+		<!--
+		 admin登录操作 
+		-->
+		<action name="adminLogin" class="adminLoginAction">
+			<result name="input">/QALogin.html</result>
+			<result name="success">/admin/index.jsp</result> 
+		</action>
+		
+		<action name="main" class="mainAction">
+			<result name="success">/Qsquare.jsp</result>
+		</action>
+		
+		<action name="index_">
+			<result>/index.jsp</result>
+		</action>
+				
+		<action name="logout" class="logoutAction">
+			<result name="success">/index.jsp</result>
+		</action>
+			
+	</package>
+
+	<package name="struts2" extends="struts-default" namespace="">
+	
+	<interceptors>
+	<!--
+			 定义一个包含权限控制的拦截器栈 
+			-->
+			<interceptor name="authority" class="com.eleyuan.util.AuthorizationInterceptor" />
+				<!--
+
+			 定义一个包含权限控制的拦截器栈 
+			-->
+			<interceptor-stack name="mydefault">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="authority" />
+			</interceptor-stack>
+		</interceptors>
+		<!--
+		 定义默认拦截器 
+		-->
+		<default-interceptor-ref name="mydefault" />
+		
+		<global-results>
+			<result name="login">/Qlogin.html</result>
+			<result name="index">/index.jsp</result>
+		</global-results>
+		
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="homepage">
+		    <result>/user/Qhome.jsp</result>
+		</action>		
+		
+		
+        <action name="meb" class="com.eleyuan.action.TEST">
+			<result>/admin/index.jsp</result>
+		</action>
+		<!--		
+		 会员操作 
+		-->
+		<action name="member" class="memberAction">
+			<result name="update" type="redirect">/space/member_update.jsp</result>
+			<result name="success" type="redirect">/index.html</result>
+			<result name="admin_maint">/admin/member_maint.jsp</result>
+			<result name="nameAuto">/names_xml.jsp</result>
+			<result name="input">/member_register.jsp</result>			
+			<param name="savePath">/images/member/</param>
+		</action>
+		
+		<!--
+		 私信操作 
+		-->
+		<action name="message" class="messageAction">
+			<result name="update">/space/message_update.jsp</result>
+			<result name="message_receive_box">/space/message_receive_box.jsp</result>
+			<result name="message_send_box">/space/message_send_box.jsp</result>
+			<result name="input">/space/private_message.jsp</result>			
+		</action>
+		
+		<!-- 博客发表操作 -->
+		<action name="posttopic" class="posttopicAction">
+			<result name="input">/index.jsp</result>
+			<result name="success">/space/success.jsp</result>	
+			<result name="posttopic">/user/Qprofile.jsp</result>
+			<result name="show">/show.jsp</result>
+		</action>
+		
+		<!--回复评论发表操作 -->
+		<action name="reply" class="replyAction">
+			<result name="success">/reply_add.jsp</result>
+			<result name="list">/reply_add.jsp</result>
+			<result name="input">/reply_add.jsp</result>
+		</action>
+		<!--
+		 常规访问 
+		-->
+		<action name="list" class="listAction">
+		    <result name="posttopic">/user/Qhome.jsp</result>
+		    <result name="show">/show.jsp</result>
+			<result name="message">/space/private_message.jsp</result>
+
+			
+		</action>
+
+	</package>
+</struts>

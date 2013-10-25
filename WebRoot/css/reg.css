@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend
+	{
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: left;
+	font-style: normal;
+	word-wrap: break-word;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	font-family: "Microsoft Yahei", "STHeiti", "SimSun", "Arail", "Verdana",
+		"Helvetica", "sans-serif";
+	color: #999;
+	font-size: 12px;
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+caption,th,td {
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+a:link,a:visited {
+	font-family: "Microsoft Yahei";
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	font-family: "Microsoft Yahei";
+	color: #a9a9a9;
+	text-decoration: none;
+}
+
+.bodyBg {
+	background: #eeefef;
+}
+
+.dbWrapW {
+	width: 100%;
+	background:
+		url(../images/reg/footer_bg.png)
+		bottom repeat-x;
+	overflow: hidden;
+}
+
+.dbWrap {
+	width: 100%;
+	margin: 0 auto;
+	background:
+		url(../images/reg/header_bg_2.png)
+		top repeat-x;
+}
+
+.container {
+	width: 857px;
+	margin: 0 auto;
+	*margin-bottom: 17px;
+	position: relative;
+}
+
+.container .top {
+	position: relative;
+	z-index: 12;
+	height: 66px;
+}
+
+.container .top .logo {
+	float: left;
+	width: 170px;
+	height: 66px;
+	margin: 14px 0 0 0;
+}
+
+.container .top .logo a {
+	width: 170px;
+	height: 66px;
+	float: left;
+	text-indent: -9999px;
+	background:
+		url(../images/reg/logo.png)
+		no-repeat;
+	_background:
+		url(../images/reg/logo.gif)
+		no-repeat;
+}
+
+.footer {
+	width: 150px;
+	height: 20px;
+	clear: both;
+	margin: 0 auto;
+	font-family: "Microsoft Yahei";
+	text-align: left;
+	background-position: bottom;
+	color: #727b7f;
+}
+
+.footer p {
+	line-height: 22px;
+	text-align: left;
+}
+
+.footer .copyright {
+	padding-top: 10px;
+}
+
+.footer a,.footer a:link {
+	
+}
+
+.register {
+	width: 857px;
+	margin: 50px 0 20px 0;
+}
+
+.register .top,.register .bot {
+	background:
+		url(../images/reg/register_sprite.png)
+		no-repeat
+}
+
+.register .top,.register .bot {
+	height: 9px;
+	overflow: hidden
+}
+
+.register .bot {
+	background-position: 0 -9px
+}
+
+.register .bd {
+	background:
+		url(../images/reg/register_bg.png)
+		repeat-y;
+	padding: 10px 25px 0;
+	position: relative;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.register .bd h2 {
+	font-size: 24px;
+	color: #000;
+	font-weight: normal
+}
+
+.register .bd .loginLink {
+	font-size: 14px;
+	position: absolute;
+	right: 20px;
+	top: 20px
+}
+
+.register .bd .formCon {
+	padding: 4% 0 10% 40%
+}
+
+.W_btn_d,.W_btn_d span {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	background: url(../images/btn.png) no-repeat 0 -288px;
+	color: #fff;
+	display: inline-block;
+	padding: 0 0 0 2px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.W_btn_d span {
+	background-position: right -316px;
+	padding: 0 20px 0 18px;
+	min-width: 35px;
+	text-align: center;
+}
+
+.W_btn_d:hover {
+	background-position: 0 -344px;
+	text-decoration: none;
+}
+
+.W_btn_d:hover span {
+	background-position: right -372px;
+}
+.

@@ -1,0 +1,278 @@
+@charset "utf-8"; 
+
+html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend
+	{
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: left;
+	font-style: normal;
+	word-wrap: break-word;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	font-family: "Microsoft Yahei", "STHeiti", "SimSun", "Arail", "Verdana",
+		"Helvetica", "sans-serif";
+	color: #999;
+	font-size: 12px;
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+caption,th,td {
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+a:link,a:visited {
+	font-family: "Microsoft Yahei";
+	color: #a9a9a9;
+	text-decoration: none;
+}
+
+a:hover {
+	font-family: "Microsoft Yahei";
+	color: #a9a9a9;
+	text-decoration: underline;
+}
+
+:focus {
+	outline: 0;
+}
+
+input.txt {
+	border-top: 1px solid #cdcdcd;
+	border-left: 1px solid #a4a4a4;
+	border-bottom: 1px solid #e8e8e8;
+	border-right: 1px solid #d9d9d9;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 14px
+}
+
+body {
+	background: #fff;
+}
+
+.login {
+	width: 100%;
+	margin: 0 auto;
+	mine-height: 580px;
+	_height: 580px
+}
+
+.lkBtn {
+	position: absolute;
+	right: 18px;
+	top: 15px;
+	z-index: 3;
+}
+
+.loginCon {
+	width: 780px;
+	margin: 0 auto;
+	padding: 100px 0 0 0;
+	text-align: left;
+	position: relative;
+	z-index: 2;
+	background: #fff;
+}
+
+.loginCon h1 {
+	width: 322px;
+	height: 158px;
+	margin-bottom: 50px;
+	margin-left: 253px;
+	background: url(../images/login/logo_login.png) no-repeat;
+	text-indent: -9999px;
+}
+
+.loginForm {
+	position: relative;
+	padding-left: 78px;
+	padding-bottom: 48px;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.loginForm input.ipt {
+	width: 228px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #84a4c1;
+	padding: 0 9px;
+	margin-right: 10px;
+	float: left;
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+	color: #b7cdd8;
+}
+
+.loginForm input {
+	border-color: #2982ff;
+	border-radius:2px;
+}
+.loginForm input.uid:FOCUS {
+	background: url("");
+}
+
+.loginForm input.uid {
+	background: url(../images/login/loginipt_bg.png) 0 0
+		no-repeat;
+}
+
+.loginForm input.psw {
+	background: url(../images/login/loginipt_bg.png) 0 -80px
+		no-repeat;
+}
+
+.loginForm input.psw:FOCUS {
+	background: url("");
+}
+
+.loginForm .errtips {
+	position: absolute;
+	left: 78px;
+	top: 46px;
+	font-size: 12px;
+	color: #ff7200;
+}
+
+
+.loginForm a,.loginForm a:link,.loginForm a:visited {
+	float: left;
+	white-space: pre;
+	margin-top: 12px;
+	margin-left: 16px;
+	color: #9AC2D4;
+	text-decoration: none;
+	word-wrap: normal;
+}
+
+.loginForm a:hover {
+	color: #68a2d5;
+	text-decoration: none;
+}
+
+.loginForm .errtips a {
+	margin: 0 0 0 5px;
+	float: none;
+}
+
+.loginForm a.loginBtn,.loginForm a.loginBtn:link,.loginForm a.loginBtn:visited
+	{
+	float: left;
+	height: 42px;
+	width:82px;
+	margin: 0;
+	line-height: 40px;
+	*line-height: 42px;
+	background: url(../images/login/btn10.png) no-repeat;
+	_background: url(../images/login/btn10.gif) no-repeat;
+	padding-left: 31px;
+	font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.loginForm a.loginBtn span {
+	height: 42px;
+	display: inline-block;
+	background: url(../images/login/btn10.png) right -84px
+		no-repeat;
+	_background: url(../images/login/btn10.gif) right -84px
+		no-repeat;
+	padding-right: 29px;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.loginForm a.loginBtn:hover {
+	background-position: 0 -168px;
+	text-decoration: none;
+}
+
+.loginForm a.loginBtn:hover span {
+	background-position: right -252px;
+	text-decoration: none;
+}
+
+.lkBtn a.regBtn {
+	display: inline-block;
+	height: 30px;
+	float: left;
+	line-height: 28px;
+	*line-height: 30px;
+	background: url(../images/login/btn09.png) no-repeat;
+	_background: url(../images/login/btn09.gif) no-repeat;
+	padding-left: 15px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 3px;
+}
+
+.lkBtn a.regBtn span {
+	height: 30px;
+	display: inline-block;
+	background: url(../images/login/btn09.png) right -60px
+		no-repeat;
+	_background: url(../images/login/btn09.gif) right -60px
+		no-repeat;
+	padding-right: 13px;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.lkBtn a.regBtn:hover {
+	background-position: 0 -120px;
+	text-decoration: none;
+}
+
+.lkBtn a.regBtn:hover span {
+	background-position: right -180px;
+	text-decoration: none;
+}
+
+.lkBtn a.introduce,.lkBtn a.introduce:link {
+	width: 148px;
+	height: 35px;
+	float: left;
+	margin-right: 10px;
+	display: inline-block;
+	background: url(../images/login/ico_introduce.png) no-repeat;
+	text-indent: -9999px;
+}
+
+.friendLinks {
+	margin-top: 25px;
+	text-align: center;
+	color: #9ac2d4;
+}
+
+.friendLinks a,.friendLinks a:link {
+	margin-right: 7px;
+	color: #9ac2d4;
+	text-decoration: none;
+}
+
+.friendLinks a:hover {
+	color: #68a2d5;
+	text-decoration: none;
+}

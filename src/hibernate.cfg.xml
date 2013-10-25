@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+
+	<!-- 连接池  -->
+	<property name="hibernate.proxool.pool_alias">dbpool</property>
+	<property name="hibernate.proxool.xml">proxool.xml</property>
+	<property name="connection.provider_class">
+		org.hibernate.connection.ProxoolConnectionProvider
+	</property>
+
+	<property name="dialect">
+		org.hibernate.dialect.MySQL5Dialect
+	</property>
+
+	<property name="current_session_context_class">thread</property>
+
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">true</property>
+	<property name="format_sql">true</property>
+
+	<!-- 二级缓  -->
+	<property name="hibernate.cache.use_second_level_cache">
+		true
+	</property>
+	<property name="hibernate.cache.use_query_cache">true</property>
+	<property name="hibernate.cache.provider_class">
+		org.hibernate.cache.EhCacheProvider
+	</property>
+
+	<property name="hibernate.generate_statistics">true</property>
+
+	<mapping class="com.eleyuan.bean.Photo" />
+	<mapping class="com.eleyuan.bean.Member" />
+	<mapping class="com.eleyuan.bean.Admin" />
+	<mapping class="com.eleyuan.bean.Message" />
+	<mapping class="com.eleyuan.bean.Posttopic" />
+	<mapping class="com.eleyuan.bean.Reply" />
+</session-factory>
+
+</hibernate-configuration>
